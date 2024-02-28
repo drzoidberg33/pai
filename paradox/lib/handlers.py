@@ -67,7 +67,7 @@ class PersistentHandler(Handler):
 
 
 class HandlerRegistry:
-    def __init__(self, should_ignore_no_handlers=False):
+    def __init__(self, should_ignore_no_handlers=True):
         self._handlers: List[Handler] = []
         self._should_ignore_no_handlers = should_ignore_no_handlers
 
